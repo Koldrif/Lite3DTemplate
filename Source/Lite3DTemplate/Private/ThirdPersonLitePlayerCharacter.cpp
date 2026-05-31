@@ -57,12 +57,6 @@ void AThirdPersonLitePlayerCharacter::HandleMove2D(const FInputActionValue& Valu
 void AThirdPersonLitePlayerCharacter::HandleLook2D(const FInputActionValue& Value)
 {
 	auto lookValue = Value.Get<FVector2D>();
-	GEngine->AddOnScreenDebugMessage(
-			-1, 
-			1.f, 
-			FColor::Blue, 
-			FString::Format(TEXT("Input value [{0}, {1}]"), {lookValue.X, lookValue.Y})
-			);
 	AddControllerPitchInput(lookValue.Y);
 	AddControllerYawInput(lookValue.X);
 }
