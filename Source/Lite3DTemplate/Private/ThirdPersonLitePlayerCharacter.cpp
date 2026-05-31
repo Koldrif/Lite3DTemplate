@@ -23,7 +23,7 @@ AThirdPersonLitePlayerCharacter::AThirdPersonLitePlayerCharacter()
 	CameraComponent->SetupAttachment(SpringArmComponent);
 	CameraComponent->bUsePawnControlRotation = false;
 	
-	
+	SpawnCollisionHandlingMethod = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 }
 
 // Called when the game starts or when spawned
