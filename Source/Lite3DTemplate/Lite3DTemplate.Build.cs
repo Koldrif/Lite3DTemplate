@@ -25,7 +25,7 @@ public class Lite3DTemplate : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core",
+				"Core", "EnhancedInput",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -38,6 +38,8 @@ public class Lite3DTemplate : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				"EnhancedInput",
+				
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
